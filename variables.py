@@ -1,3 +1,4 @@
+'''
 name = "Asomiddin"
 print(name)
 an_int = 8
@@ -13,3 +14,7 @@ b = 4
 c = 9
 print(a + b)
 print(c - a)
+'''
+
+a = 100
+print (a)
