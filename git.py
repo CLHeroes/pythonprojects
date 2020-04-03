@@ -4,7 +4,7 @@ import time
 
 print("Welcome to GIT game")
 name = input("Please enter your name : ")
-print("Hello " + name + "!")
+print('Hello ' + name.upper()[0] + name.lower()[1:])
 time.sleep(1)
 
 ## git init
