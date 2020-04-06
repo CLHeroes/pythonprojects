@@ -28,9 +28,9 @@ pipeline {
     post {
         always {
             sh """
-                rm -f importantfile1
-                rm -f importantfile2
-                rm -f importantfile3
+                touch importantfile1
+                touch importantfile2
+                touch importantfile3
             """
         }
     }
