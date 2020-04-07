@@ -1,0 +1,20 @@
+pipeline {
+    agent any
+    stages {
+        stage("create date fiel") {
+            steps {
+                sh """
+                    date > date.txt
+                """
+            } // steps
+        } //stage
+        stage("rename date file") {
+            steps {
+                sh """
+                    mv date.txt today.txt
+                """
+            } //steps
+        } //stage
+    } //stages
+
+} //pipeline 
