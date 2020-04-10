@@ -4,7 +4,7 @@ pipeline {
         stage("create date fiel") {
             steps {
                 sh """
-                    date > ~/date.txt
+                    date >> ~/date.txt
                 """
             } // steps
         } //stage
