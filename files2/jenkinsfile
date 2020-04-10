@@ -4,14 +4,14 @@ pipeline {
         stage("create date fiel") {
             steps {
                 sh """
-                    date >> ~/date.txt
+                    date >> ~/date1.txt
                 """
             } // steps
         } //stage
         stage("rename date file") {
             steps {
                 sh """
-                    mv ~/date.txt ~/today.txt
+                    mv ~/date1.txt ~/today.txt
                 """
             } //steps
         } //stage
